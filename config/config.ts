@@ -153,5 +153,14 @@ export default defineConfig({
   },
   esbuildMinifyIIFE: true,
   requestRecord: {},
+  manifest: {
+    basePath: '/',
+  },
+  history: {
+    type: 'hash',
+  },
+  publicPath: './',
+  define: {},
   tailwindcss: {},
+  qiankun: { master: {} }
 });

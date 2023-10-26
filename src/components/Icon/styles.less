@@ -1,0 +1,43 @@
+.iconBox {
+  display: inline-block;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    color: #2f54eb;
+    background: #bae7ff !important;
+    transition: all 0.5s;
+  }
+
+  &.select {
+    color: #1d39c4;
+    background: #ecf2fa;
+  }
+
+  .icon {
+    padding: 10px;
+    font-size: 30pt;
+  }
+
+  .title {
+    display: block;
+  }
+}
+
+.tabBox {
+  // 限定高度，使在弹窗显示时可以在 tab 内容显示滚动条
+  height: 100%;
+
+  :global {
+    .ant-tabs-content {
+      height: 100%;
+
+      .ant-tabs-tabpane {
+        height: 100%;
+        overflow: auto;
+      }
+    }
+  }
+}
