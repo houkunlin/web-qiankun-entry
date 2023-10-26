@@ -153,4 +153,5 @@ export default defineConfig({
   },
   esbuildMinifyIIFE: true,
   requestRecord: {},
+  tailwindcss: {},
 });
